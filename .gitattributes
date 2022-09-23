@@ -1,2 +1,9 @@
+#!  Parar de me pertubar sobre isso - Stop bugging me!
+* text=auto eol=crlf
+
 # Auto detect text files and perform LF normalization
-* text=auto
+* text=autocrlf
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+*.exe    text eol=crlf
