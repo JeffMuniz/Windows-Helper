@@ -3,7 +3,7 @@ Remove Windows 10 apps
 Get-AppxPackage -AllUsers | where-object {$_.name -notlike "*store*"} | Remove-AppxPackage
 
 DISM.exe /Online /Cleanup-image /Restorehealth
-DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename
+DISM /Online /Get-ProvisionedAppxPackages | select-string "Packagename"
 
 
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:

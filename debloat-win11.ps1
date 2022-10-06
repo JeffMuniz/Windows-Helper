@@ -1,17 +1,80 @@
+install choco
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco install grep -y
+
+
+
+Get-AppxPackage -AllUsers | where-object {$_.name –notlike "*store*"} | Select-String "Microsoft."
+
+Get-AppxPackage -AllUsers -name Microsoft.Windows.ParentalControls
+
+
+Get-AppxPackage -AllUsers -name  Microsoft.SecHealthUI
+
+Microsoft.Windows.NarratorQuickStart_10.0.22621.1_neutral_neutral_8wekyb3d8bbwe
+Microsoft.Windows.ParentalControls_1000.22621.1.0_neutral_neutral_cw5n1h2txyewy
+Microsoft.Windows.PeopleExperienceHost_10.0.22621.1_neutral_neutral_cw5n1h2txyewy
+Microsoft.Windows.PrintQueueActionCenter_1.0.1.0_neutral_neutral_cw5n1h2txyewy
+Microsoft.XboxGameCallableUI_1000.22621.1.0_neutral_neutral_cw5n1h2txyewy
+Microsoft.GetHelp_10.2206.2011.0_x64__8wekyb3d8bbwe
+Microsoft.Getstarted_10.2206.2.0_x64__8wekyb3d8bbwe
+Microsoft.Paint_11.2208.6.0_x64__8wekyb3d8bbwe
+Microsoft.People_10.2105.4.0_x64__8wekyb3d8bbwe
+microsoft.windowscommunicationsapps_16005.14326.20970.0_x64__8wekyb3d8bbwe
+Microsoft.WindowsFeedbackHub_1.2203.761.0_x64__8wekyb3d8bbwe
+Microsoft.Xbox.TCUI_1.24.10001.0_x64__8wekyb3d8bbwe
+Microsoft.XboxGameOverlay_1.54.4001.0_x64__8wekyb3d8bbwe
+Microsoft.XboxIdentityProvider_12.93.6001.0_x64__8wekyb3d8bbwe
+Microsoft.XboxSpeechToTextOverlay_1.21.13002.0_x64__8wekyb3d8bbwe
+Microsoft.YourPhone_1.22072.207.0_x64__8wekyb3d8bbwe
+Microsoft.MicrosoftSolitaireCollection_4.14.9130.0_x64__8wekyb3d8bbwe
+Microsoft.WindowsAlarms_11.2208.5.0_x64__8wekyb3d8bbwe
+Microsoft.WindowsMaps_11.2208.6.0_x64__8wekyb3d8bbwe
+Microsoft.GamingApp_2209.1001.5.0_x64__8wekyb3d8bbwe
+Microsoft.PowerAutomateDesktop_10.0.4447.0_x64__8wekyb3d8bbwe
+Microsoft.WindowsNotepad_11.2208.25.0_x64__8wekyb3d8bbwe
+Microsoft.XboxGamingOverlay_5.822.9161.0_x64__8wekyb3d8bbwe
+Microsoft.WindowsSoundRecorder_11.2208.27.0_x64__8wekyb3d8bbwe
+
+
+
+
+#AGRESSIVO Get-AppxPackage *f* | Remove-AppxPackage
+#AGRESSIVO Get-AppxPackage -AllUsers | Remove-AppxPackage
+#AGRESSIVO  Get-AppxPackage -AllUsers | where-object {$_.name –notlike "*store*"} | Select-String "Microsoft." | Remove-AppxPackage
+
+
+
 WITH DISM
-
-#DISM /Online /Remove-ProvisionedAppxPackage /PackageName:PACKAGENAME
-#### <command> is a *placeholder* for any valid command; e.g.:
-#    $cmdOutput = Get-Date
-#    $cmdOutput = attrib.exe +R readonly.txt
-#    $cmdOutput = <command> captures the command's success stream / stdout output
-##$cmdOutput =  DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename
-#DISM /Online /Remove-ProvisionedAppxPackage /PackageName:$cmdOutput
-
 DISM.exe /Online /Cleanup-image /Restorehealth
-DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename
+DISM /Online /Get-ProvisionedAppxPackages -AllUsers | select-string Packagename
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Clipchamp.Clipchamp_2.2.8.0_neutral_~_yxz26nhyzhsrt
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GamingApp_2021.427.138.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.2206.2011.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_2021.2206.2.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftSolitaireCollection_4.13.7040.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftStickyNotes_4.5.6.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Paint_11.2208.6.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2021.2105.4.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.PowerAutomateDesktop_10.0.4266.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.76.52211.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms_2022.2206.27.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:microsoft.windowscommunicationsapps_16005.14326.20970.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsFeedbackHub_2022.317.2207.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsMaps_2022.2206.6.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsNotepad_11.2205.11.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsSoundRecorder_2021.2206.30.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Xbox.TCUI_1.24.10001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGameOverlay_1.54.4001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGamingOverlay_5.822.6271.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxIdentityProvider_12.93.6001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxSpeechToTextOverlay_1.21.13002.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_1.22072.207.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneMusic_11.2205.22.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneVideo_2019.22041.10091.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftTeams_22227.300.1508.3394_x64__8wekyb3d8bbwe
 
-from last batch
+
 
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:E046963F.LenovoCompanion_10.2208.7.0_neutral_~_k1h2ywk1493x8
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:E0469640.LenovoUtility_4.2.54.0_neutral_~_5grkq8ppsgwt4
@@ -164,8 +227,6 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneVideo_201
 PowerShell
 
 Get-AppxPackage -AllUsers | where-object {$_.name –notlike "*store*"} | Remove-AppxPackage
-
-
 Get-AppxPackage -name “Microsoft.Music.Preview” | Remove-AppxPackage
 Get-AppxPackage -name “Microsoft.XboxIdentityProvider” | Remove-AppxPackage
 Get-AppxPackage -name “Microsoft.BingTravel” | Remove-AppxPackage
@@ -261,6 +322,8 @@ InstallLocation   : C:\Windows\SystemApps\Microsoft.LockApp_cw5n1h2txyewy
 
 
 
+MinhaVidaDeMerda@01
+machina.corporate@gmail.com
 
 
 
@@ -293,49 +356,37 @@ InstallLocation   : C:\Windows\SystemApps\Microsoft.AsyncTextService_8wekyb3d8bb
 
 
 
+Get-AppxPackage *f*
+Get-AppxPackage *fa*
+Get-AppxPackage *face*
+Get-AppxPackage *f* | Remove-AppxPackage
+Get-AppxPackage *fac* | Remove-AppxPackage
+Get-AppxPackage *f*
+Get-AppxPackage *i*
+Get-AppxPackage *ins*
+Get-AppxPackage *in*
+Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost*
+ Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost*
+Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost*
+Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost* | Remove-AppxPackage
+Get-AppxPackage Windows.PrintDialog* | Remove-AppxPackage
+Get-AppxPackage *Windows.PrintDialog* | Remove-AppxPackage
+Get-AppxPackage *f* | Remove-AppxPackage
+Get-AppxPackage *f*
+Get-AppxPackage -name *
+Get-AppxPackage -?
+
+ Get-AppxPackage | Select-String NonRemovable
+ Get-AppxPackage | Select-String "NonRemovable"
+ Get-AppxPackage | Select-String /NonRemovable
+ Get-AppxPackage | Select-String name
+ Get-AppxPackage | Select-String /name
+ get-help Get-AppxPackage -examples
 
 
 
 
-
-
-
-
-    + CategoryInfo          : ObjectNotFound: (C:\Windows\system32\apps.log:String) [Get-Content], ItemNotFoundException
-    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
-
-   1 py
-   2 python3.exe
-   3 python
-   4 Get-AppxPackage *f
-   5 Get-AppxPackage *f*
-   6 Get-AppxPackage *f* | Remove-AppxPackage
-   7 Get-AppxPackage *f*
-   8 Get-AppxPackage *fa*
-   9 Get-AppxPackage *face*
-  10 Get-AppxPackage *f* | Remove-AppxPackage
-  11 Get-AppxPackage *fac* | Remove-AppxPackage
-  12 Get-AppxPackage *f*
-  13 Get-AppxPackage *i*
-  14 Get-AppxPackage *ins*
-  15 Get-AppxPackage *in*
-  16 Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost*
-  17  Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost* | Remove-AppxPackage
-  18 Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost*
-  19 Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost*
-  20 Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost* | Remove-AppxPackage
-  21 Get-AppxPackage Windows.PrintDialog* | Remove-AppxPackage
-  22 Get-AppxPackage *Windows.PrintDialog* | Remove-AppxPackage
-  23 Get-AppxPackage *f* | Remove-AppxPackage
-  24 Get-AppxPackage *f*
-  25 Get-AppxPackage -name *
-  26 Get-AppxPackage -?
-  27 Get-AppxPackage | Select-String NonRemovable
-  28 Get-AppxPackage | Select-String "NonRemovable"
-  29 Get-AppxPackage | Select-String /NonRemovable
-  30 Get-AppxPackage | Select-String name
-  31 Get-AppxPackage | Select-String /name
-  32 get-help Get-AppxPackage -examples
   33 Get-AppxPackage -?
   34 Get-AppxPackage -PackageTypeFilter
   35 Get-AppxPackage -PackageTypeFilter None
@@ -365,3 +416,46 @@ https://pplware.sapo.pt/truques-dicas/sysprep-criar-uma-instalacao-personalizada
 
 sysprep sapo
 Get-AppxPackage -AllUsers | where-object {$_.name –notlike "*store*"} | Remove-AppxPackage
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DISM /Online /Remove-ProvisionedAppxPackage /PackageName:PACKAGENAME
+#### <command> is a *placeholder* for any valid command; e.g.:
+#    $cmdOutput = Get-Date
+#    $cmdOutput = attrib.exe +R readonly.txt
+#    $cmdOutput = <command> captures the command's success stream / stdout output
+##$cmdOutput =  DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename
+#DISM /Online /Remove-ProvisionedAppxPackage /PackageName:$cmdOutput
+
+
+
+
+
+
+
+
+
+
+
+
+rundeck
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco install grep pip python -y
+pip install pywinrm requests-kerberos requests-credssp
+
+
+
+pip install requests-kerberos requests-credssp
+
+
+
