@@ -8,6 +8,7 @@ Get-AppxPackage -AllUsers | where-object {$_.name –notlike "*store*"} | Select
 
 Get-AppxPackage -AllUsers -name Microsoft.Windows.ParentalControls
 
+#em32> Get-AppxPackage -AllUsers | where-object {$_.name -notlike "*store*"} | Remove-AppxPackage
 
 Get-AppxPackage -AllUsers -name  Microsoft.SecHealthUI
 
