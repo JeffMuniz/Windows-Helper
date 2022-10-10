@@ -1663,44 +1663,4 @@ git clone git@machina.local:infraestrutura/PBM/machina-machina-repoe-estoques-fr
 git clone git@machina.local:infraestrutura/PBM/machina-repoe-estoque-service.git
 git init
 git push
-aws
-aws '.\Dados de Aplicativos\ping iflte.com'
-ping iftle.com
-setx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
-setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
-aws login
-aws
-aws help
-aws configure
-aws help
-aws
-aws help
-aws login
-aws connect-contact-lens
-aws ec2-instance-connect
-aws ec2-instance-connect .\profile-production
-aws ec2-instance-connect send-ssh-public-key profile-production
-aws ec2-instance-connect send-ssh-public-key --ssh-public-key profile-production 
-setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
-setx.exe .\.bash_historysetx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
-setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
-setx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
-setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
-setx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
-aws ec2-instance-connect send-ssh-public-key --ssh-public-key profile-production --id-instance SOME-TOKEN
-aws ec2-instance-connect send-ssh-public-key --ssh-public-key profile-production --instance-ID  SOME-TOKEN
-aws ec2-instance-connect send-ssh-public-key --ssh-public-key profile-production --instance-id  SOME-TOKEN
-aws ec2-instance-connect send-ssh-public-key \`
---instance-id  SOME-TOKEN
-aws configure
-aws configure --profile profile-production
-aws ec2-instance-connect \`
---instance-id  SOME-TOKEN
-aws configure
-aws ec2-instance-connect \
---instance-id qa-machina-lite-cluster-eks \
---instance-id qa-machina-lite-cluster-eks \aws ec2-instance-connect \
---instance-id qa-machina-lite-cluster-eks
-aws ec2-instance-connect \
---instance-id qa-machina-lite-cluster-eks
-aws configure
+

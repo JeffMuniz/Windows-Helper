@@ -1,89 +1,3 @@
-aws eks list-cluster
-aws eks list-clusters
-setx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
-setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
-aws eks list-clusters
-aws configure
-aws eks list-clusters
-aws configure --profile profile-production
-aws configure --profile profile-quality
-aws eks list-clusters
-aws eks list-clusters --profile profile-production
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks
-aws configure
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks
-touch
-touch .aws/credentials
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks
-cat 'C:\Users\Macna Toura\.aws\credentials'
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-production
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .aws\profile-production
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\.aws\profile-production
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-production
-cat .\profile-production
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-production
-cat .\profile-production
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
-cat .\profile-quality
-cod .
-code .
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-production
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-production
- cat .\profile-production
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-production
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
-cat .\profile-quality
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
-vim ~/.aws/config
-npm install vim
-code ~/.aws/config
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
-181unset AWS_DEFAULT_PROFILE
-aws configure
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks
- curl http://169.254.169.254/latest/meta-data/iam/security-credentials
-aws iam list-users
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
-unset AWS_SESSION_TOKEN
-setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
-unsetx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
-REG delete HKCU\Environment /F /V FOOBAR
-REG delete HKCU\Environment /F /V AWS_SECRET_ACCESS_KEY 
-REG delete HKCU\Environment /F /V AWS_ACCESS_KEY_ID 
-cmd
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks 
-get-session-token
-aws get-session-token
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks 
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
-aws configure
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks 
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
-aws configure --profile profile-quality
-aws configure --profile profile-production
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-production
-kubectl get pod
-aws get-session-token
-aws iam list-users
-aws iam list-users --profile profile-quality
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-choco install fluent-terminal
-flng
-cxv
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
-aws iam list-users --profile profile-quality
-aws
-aws help
-aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
-kubectl get node
-kubectl get no
-
 curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
 Install-Script -Name 'install-kubectl' -Scope CurrentUser -Force
 nstall-Script -Name 'install-kubectl' -Scope CurrentUser -Force
@@ -817,3 +731,161 @@ code .\values.yaml
 $ echo '{mariadb.auth.database: user0db, mariadb.auth.username: user0}' > values.yaml
 $ helm install -f values.yaml bitnami/wordpress --generate-name
 helm uninstall prometheus-pg-exporter  -n machina-pg
+
+
+
+
+
+
+
+
+
+
+aws
+aws '.\Dados de Aplicativos\ping iflte.com'
+ping iftle.com
+setx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
+setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
+aws login
+aws
+aws help
+aws configure
+aws help
+aws
+aws help
+aws login
+aws connect-contact-lens
+aws ec2-instance-connect
+aws ec2-instance-connect .\profile-production
+aws ec2-instance-connect send-ssh-public-key profile-production
+aws ec2-instance-connect send-ssh-public-key --ssh-public-key profile-production 
+setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
+setx.exe .\.bash_historysetx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
+setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
+setx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
+setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
+setx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
+aws ec2-instance-connect send-ssh-public-key --ssh-public-key profile-production --id-instance SOME-TOKEN
+aws ec2-instance-connect send-ssh-public-key --ssh-public-key profile-production --instance-ID  SOME-TOKEN
+aws ec2-instance-connect send-ssh-public-key --ssh-public-key profile-production --instance-id  SOME-TOKEN
+aws ec2-instance-connect send-ssh-public-key \`
+--instance-id  SOME-TOKEN
+aws configure
+aws configure --profile profile-production
+aws ec2-instance-connect \`
+--instance-id  SOME-TOKEN
+aws configure
+aws ec2-instance-connect \
+--instance-id qa-machina-lite-cluster-eks \
+--instance-id qa-machina-lite-cluster-eks \aws ec2-instance-connect \
+--instance-id qa-machina-lite-cluster-eks
+aws ec2-instance-connect \
+--instance-id qa-machina-lite-cluster-eks
+aws configure
+
+
+
+aws eks list-cluster
+aws eks list-clusters
+setx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
+setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
+aws eks list-clusters
+aws configure
+aws eks list-clusters
+aws configure --profile profile-production
+aws configure --profile profile-quality
+aws eks list-clusters
+aws eks list-clusters --profile profile-production
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks
+aws configure
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks
+touch
+touch .aws/credentials
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks
+cat 'C:\Users\Macna Toura\.aws\credentials'
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-production
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .aws\profile-production
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\.aws\profile-production
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-production
+cat .\profile-production
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-production
+cat .\profile-production
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
+cat .\profile-quality
+cod .
+code .
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-production
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-production
+ cat .\profile-production
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-production
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
+cat .\profile-quality
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
+vim ~/.aws/config
+npm install vim
+code ~/.aws/config
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
+181unset AWS_DEFAULT_PROFILE
+aws configure
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks
+ curl http://169.254.169.254/latest/meta-data/iam/security-credentials
+aws iam list-users
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
+unset AWS_SESSION_TOKEN
+setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
+unsetx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
+REG delete HKCU\Environment /F /V FOOBAR
+REG delete HKCU\Environment /F /V AWS_SECRET_ACCESS_KEY 
+REG delete HKCU\Environment /F /V AWS_ACCESS_KEY_ID 
+cmd
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks 
+get-session-token
+aws get-session-token
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks 
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
+aws configure
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks 
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
+aws configure --profile profile-quality
+aws configure --profile profile-production
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-production
+kubectl get pod
+aws get-session-token
+aws iam list-users
+aws iam list-users --profile profile-quality
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+choco install fluent-terminal
+flng
+cxv
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
+aws iam list-users --profile profile-quality
+aws
+aws help
+aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-quality
+kubectl get node
+kubectl get no
+
+
+
+
+
+install
+choco
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+
+rundeck
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco install grep pip python -y
+
+pip install pywinrm requests-kerberos requests-credssp
+pip install requests-kerberos requests-credssp
+
+
+
