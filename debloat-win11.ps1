@@ -1,14 +1,16 @@
+
 WITH DISM
 DISM.exe /Online /Cleanup-image /Restorehealth
+Reinstall Store
+Get-AppxPackage -allusers Microsoft.WindowsStore | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:PACKAGENAME
 <command> is a *placeholder* for any valid command; e.g.:
 #    $cmdOutput = Get-Date
 #    $cmdOutput = attrib.exe +R readonly.txt
 #    $cmdOutput = <command> captures the command's success stream / stdout output
-##$cmdOutput =  DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:$cmdOutput
-
+$cmdOutput = DISM /Online /Get-ProvisionedAppxPackages | select-string Packagename
+#DISM /Online /Remove-ProvisionedAppxPackage /PackageName:$cmdOutput
 DISM /Online /Get-ProvisionedAppxPackages | select-string "Packagename"
 
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.549981C3F5F10_4.2204.13303.0_neutral_~_8wekyb3d8bbwe
@@ -91,10 +93,6 @@ Get-AppxPackage *XboxApp* | Remove-AppxPackage-AppxPackage ** | Remove-AppxPacka
 #AGRESSIVOGet-AppxPackage -AllUsers | Remove-AppxPackage
 #AGRESSIVO Get-AppxPackage -AllUsers | where-object {$_.name –notlike "*store*"} | Select-String "Microsoft." | Remove-AppxPackage
 
-Reinstall Store
-Get-AppxPackage -allusers Microsoft.WindowsStore | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-
-
 
 
 
@@ -166,36 +164,18 @@ InstallLocation   : C:\Windows\SystemApps\Microsoft.LockApp_cw5n1h2txyewy
 #Very brute
 #Get-AppxPackage ** | Remove-AppxPackage
 
-Get-AppxPackage -allusers Microsoft.WindowsStore | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
-Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost*
 Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost*
-Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost*
-Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost* | Remove-AppxPackage
-Get-AppxPackage Windows.PrintDialog* | Remove-AppxPackage
 Get-AppxPackage *Windows.PrintDialog* | Remove-AppxPackage
 Get-AppxPackage -PackageTypeFilter Bundle
 Get-AppxPackage -PackageTypeFilter Framework
 
 
-
-WINDOWS 10
-
-https://pplware.sapo.pt/truques-dicas/sysprep-criar-uma-instalacao-personalizada-do-windows-10-1/
-
-sysprep sapo
-Get-AppxPackage -AllUsers | where-object {$_.name –notlike "*store*"} | Remove-AppxPackage
-
-
-
 Remove Windows 10 apps
 Get-AppxPackage -AllUsers | where-object {$_.name -notlike "*store*"} | Remove-AppxPackage
 
-DISM.exe /Online /Cleanup-image /Restorehealth
 DISM /Online /Get-ProvisionedAppxPackages | select-string "Packagename"
 
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.549981C3F5F10_4.2204.13303.0_neutral_~_8wekyb3d8bbwe
-
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftOfficeHub_18.2209.1061.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftSolitaireCollection_4.14.9020.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Office.OneNote_16001.14326.21090.0_neutral_~_8wekyb3d8bbwe
@@ -203,14 +183,3 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.SkypeApp_15.8
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneMusic_2019.22031.10091.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:RealtekSemiconductorCorp.RealtekAudioControl_1.14.221.0_neutral_~_dt26b99r8h8gj
 
-
-DISM.exe /Online /Cleanup-image /Restorehealth
-
-
-
-
-
-
-
-
-https://www.systweak.com/blogs/how-to-remove-bloatware-from-windows-11/
