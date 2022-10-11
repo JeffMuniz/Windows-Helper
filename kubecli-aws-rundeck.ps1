@@ -3,30 +3,18 @@ Install-Script -Name 'install-kubectl' -Scope CurrentUser -Force
 Install-Script -Name 'install-kubectl' -Scope CurrentUser -Force kubetlinstall-kubectl.ps1 -DownloadLocation
 kubectl version --client
 
-
-
-
-
-
-
-
 kubectl get ep -A 
 kubectl get vs -A 
 kubectl get gw -A 
 kubectl port-forward svc/argocd-server -n argocd 8082:80
  
 kubectl port-forward svc/argocd-server -n argocd 8082:80
-aws eks --region us-east-1 update-kubeconfig --name prod-machina-lite-cluster-eks --profile profile-production
 kubectl get gw -A 
-kubectl get pod -A 
+  
 kubectl logs  pod/machina-kafka-0 -n machina-kafka kafka
-kubectl logs  pod -A
-kubectl logs  -A
-kubectl logs  --help
-kubectl logs  --all
-stern
+
 kubectl -n machina logs -f deployment/machina-pod1 --all-containers=true --since=10m
-kubectl get pod -A 
+
 kubectl get pod -A |grep machina-pod1
 
 
@@ -36,8 +24,7 @@ kubectl get pod -A |grep machina-pod1
 
 
 kubectl.exe get no
-aws eks --region us-east-1 update-kubeconfig --name prod-machina-lite-cluster-eks --profile .\profile-production
- 
+
 kubectl.exe get no
 kubetl get po -a
 kubetl get po -all
@@ -66,8 +53,7 @@ kubectl port-forward svc/machina-elastic-cloud-kb-http 5601:5601 -n machina-elas
 acesso: http://localhost:5601/
  
 kubectl get pod -n machina
-kubectl port-forward svc/machina-elastic-cloud-kb-http 5601:5601 -n machina-es 
-elastic/some-Token-Id 
+kubectl port-forward svc/machina-elastic-cloud-kb-http 5601:5601 -n machina-elastic/some-Token-Id 
 acesso: http://localhost:5601/
  
 kubectl get pod -n machina
@@ -111,8 +97,8 @@ kubectl exec --stdin --tty machina-kafka-0 -- /bin/bash
 kubectl exec --stdin --tty machina-kafka -- /bin/bash
 kubectl exec  -it machina-kafka /bin/bash
 kubectl exec  -it machina-kafka-0 -n machina-kafka sh
-kubectl get pod -A 
-kubectl get pod -A | grep 
+  
+  
 
 
 
@@ -151,22 +137,10 @@ kubectl exec  -it machina-kafka-0 -n machina-kafka sh
 kubectl describe pod/machina-kafka-0 -n machina-kafka
 kubectl exec  -it machina-kafka-1 -n machina-kafka sh
 kubectl exec  -it machina-kafka-2 -n machina-kafka sh
-kubectl get pod -A | grep kafka
+  
 kubectl exec  -it machina-kafka-exporter-9c9f5f696-6cmzf  -n machina-kafka sh
 kubectl exec  -it machina-kafka-zookeeper-0  -n machina-kafka sh
-kubectl get svc -A |grep kafka
-kubectl log
-kubectl logs
-kubectl logs -A
-kubectl logs --hrlp
-kubectl logs --help
-kubectl describe pod/machina-kafka-0 -n machina-kafka
-kubectl logs  pod/machina-kafka-0 -n machina-kafka
-kubectl logs  pod/machina-kafka-0 -n machina-kafka kafka
-kubectl logs  pod/machina-kafka-0 -n machina-kafka
-kubectl logs  pod/machina-kafka-0 -n machina-kafka jmx-exporter
 kubectl logs  pod/machina-kafka-0 -n machina-kafka istio-proxy
-kubectl get
 kubectl api-resources
 kubectl get events
 kubectl get events -n machina-kafka
@@ -186,32 +160,10 @@ telnet machina-kafka 9093
 telnet machina-kafka 443
 
 kubectl logs  pod/machina-kafka-0 -n machina-kafka istio-proxy
-curl -vvv 10.133.37.85 9092
-curl -vvv 10.133.37.85
-curl  http://10.133.37.85
-curl  -vvv http://10.133.37.85
-curl  vvv http://10.133.37.85
-curl  -vv  http://10.133.37.85
-
 kubectl exec  -it machina-kafka-zookeeper-0  -n machina-kafka sh
 kubectl describe pod/machina-kafka-zookeeper-0 -n machina-kafka
-gitlabber -t some-Token-Id -u git@machina.local:infraestrutura
-   
-cat ~/.ssh/id_ed25519.pub
 
 
-gitlabber -t some-Token-Id -u git@inlabs.app/dashboard/projects
-gitlabber -t some-Token-Id -u git@http://git@inlabs.app/dashboard/projects/api/v4git@inlabs.app/dashboard/projects/api/v4/groups
-gitlabber -t some-Token-Id -u git@inlabs.app/dashboard/projects/api/v4git@inlabs.app/dashboard/projects/api/v4/
-
-& python "c:/Users/Macna Toura/gitlabber-master/setup.py"
-
-some-Token-Id
-gitlabber -t some-Token-Id -u git@https://gitlab.inlabs.app/machina-lite/infra/
-
-gitlabber
-gitlabber -i /machina-lite/infra
-docker-compose ps 
 
 kubectl logs zookeeper | grep -i binding
 kubectl logs  pod/machina-kafka-0 -n machina-kafka istio-proxy
@@ -239,33 +191,33 @@ kubectl get svc -A |grep kafka
 kubectl get svc -A 
 kubectl get gw -n istio-system
  
-gitlabber -t some-Token-Id -u git@https://gitlab.inlabs.app/machina-lite/infra/api/v4/groups
+  
 kubectl get deploy --show-labels -n machina
 kubectl get gateways.networking.istio.io -A
-kubectl get pod -A | grep kafka
-kubectl get pod -A 
+  
+  
 kubectl port-forward svc/kiali 20001 -n machina
 kubectl port-forward svc/kiali 20001 -n telemetry
-kubectl get pod -A 
-gitlabber -t some-Token-Id -u git@https://gitlab.inlabs.app/machina-lite/infra/api/v4/groups
+  
+  
 some-Token-Id
 git clone git@gitlab.inlabs.app:machina-lite/infra/machina-lite-setup-cluster.git
-gitlabber -t some-Token-Id -u git@https://gitlab.inlabs.app/machina-lite/infra/api/v4/groups
-gitlabber -t some-Token-Id -u git@https://gitlab.inlabs.app/machina-lite/infra
-gitlabber -t some-Token-Id -u https://gitlab.inlabs.app/machina-lite/infra
+  
+  
+  
 pip install    
 pip install pywinrm requests-kerberos  gitlabber
 
 c:\program files\python39\python.exe -m pip install --upgrade pip
 py -m pip install --upgrade pip
  
-gitlabber -t some-Token-Id -u https://gitlab.inlabs.app/machina-lite/infra
+  
 pip uninstall gitlabber
  
-gitlabber -t some-Token-Id -u https://gitlab.inlabs.app/machina-lite/infra
+  
 cd ~
-gitlabber -t some-Token-Id -u https://gitlab.inlabs.app/machina-lite/infra .
-gitlabber -t some-Token-Id -u https://gitlab.inlabs.app/machina-lite/infra 
+  
+  
 cd C:\Users\Macna Toura\AppData\Roaming\Python\Python39\site-packages\requests
 cd AppData\Roaming\Python\Python39\site-packages\requests
 whoami
@@ -278,8 +230,8 @@ cd '.\FluentTerminal.Package_0.7.5.0 (1)\'
  
 cd 'C:\Users\Macna Toura\Downloads\FluentTerminal.Package_0.7.5.0 (1)'
 .\Install.ps1
-kubectl get pod -A |grep machina-pod1
-kubectl get pod -A 
+  
+  
 
 helm
 helm list -A
@@ -290,7 +242,7 @@ helm search hub
 helm search repo
 helm status
 helm status -A
-kubectl get pod -A 
+  
  
 history
 aws configure --profile profile-production
@@ -300,7 +252,7 @@ kubectl -n machina logs -f deployment/machina-pod1 --all-containers=true --since
 aws configure --profile profile-production
 git stutus
 git status
-kubectl get pod -A 
+  
 kubectl -n machina logs -f deployment/machina-pod1 --all-containers=true --since=10m
 kubectl -n machina logs -f deployment/machina-kafka --all-containers=true
 kubectl -n machina logs -f deployment/machina-* --all-containers=true
@@ -320,35 +272,9 @@ kubectl port-forward svc/prometheus-kube-prometheus-prometheus -n telemetry 9090
 kubectl port-forward svc/prometheus-grafana 3000:80 -n telemetry
  
 
-kubectl get pod -A 
-set
-set | more
-SET > output.txt
-Get-ChildItem Env:
+
 kubectl port-forward svc/prometheus-grafana 3000:80 -n telemetry
 kubectl port-forward svc/prometheus-kube-prometheus-prometheus -n telemetry 9090
-kubectl port-forward svc/prometheus-grafana 3000:80 -n telemetry
-kubectl get pod -A 
-kubectl get cn -A 
-kubectl get context -A 
-kubectl.exe
-kubectl config get-contexts
-kubectl get pod -A 
-kubectl port-forward svc/prometheus-kube-prometheus-prometheus -n telemetry 9090
-kubectl port-forward svc/prometheus-grafana 3000:80 -n telemetry
- 
-
-az login
-az extension add -n azure-cli-ml
-jupyter
-az extension add -n azure-cli-ml
-git clone https://github.com/MicrosoftLearning/mslearn-dp100
-cd .\mslearn-dp100\
-kubectl exec  -it machina-kafka-zookeeper-0  -n machina-kafka sh
-
-kubectl get pod -A 
-kubectl get pod -A |grep post
-kubectl exec machina-kafka-zookeeper-0 machina-kafka sh@
 kubectl exec machina-kafka-zookeeper-0 machina-kafka sh
 kubectl exec  -it machina-kafka-zookeeper-0  -n machina-kafka sh
 kubectl get pod -A |grep post
@@ -357,43 +283,9 @@ kubectl get nm -A
 kubectl get namespace -A
 kubectl exec  -it machina-postgres-postgresql-master-0   -n machina-pg sh
 kubectl exec  -it machina-kafka-zookeeper-0  -n machina-kafka sh
-kubectl cp .\postgres_exporter-0.9.0.linux-amd64.tar.gz machina-postgres-postgresql-master-0
 kubectl cp .\postgres_exporter-0.9.0.linux-amd64.tar.gz machina-postgres-postgresql-master-0\postgres_exporter-0.9.0.linux-amd64.tar.gz
 kubectl cp postgres_exporter-0.9.0.linux-amd64.tar.gz machina-postgres-postgresql-master-0\postgres_exporter-0.9.0.linux-amd64.tar.gz
-kubectl cp postgres_exporter-0.9.0.linux-amd64.tar.gz machina-postgres-postgresql-master-0:tmp\postgres_exporter-0.9.0.linux-amd64.tar.gz
-kubectl get pod -A |grep post
-kubectl cp .\postgres_exporter-0.9.0.linux-amd64.tar.gz machina-postgres-postgresql-master-0:tmp\postgres_exporter-0.9.0.linux-amd64.tar.gz
-kubectl cp .\postgres_exporter-0.9.0.linux-amd64.tar.gz machina-postgres-postgresql-master-0:tmp\postgres_exporter-0.9.0.linux-amd64.tar.gz -n machina-pg
-kubectl cp .\postgres_exporter-0.9.0.linux-amd64.tar.gz machina-postgres-postgresql-master-0:tmp\pg\postgres_exporter-0.9.0.linux-amd64.tar.gz -n machina-pg
- 
 
-kubectl cp .\a.txt default/resolver-proxy-69dc786fcf-5rplg:/tmp/
-kubectl cp .\postgres_exporter-0.9.0.linux-amd64.tar.gz machina-postgres-postgresql-master-0:tmp\pg\postgres_exporter-0.9.0.linux-amd64.tar.gz -n machina-pg
-kubectl get pod -A |grep post
-kubectl cp .\postgres_exporter-0.9.0.linux-amd64.tar.gz machina-postgres-postgresql-slave-0:tmp\postgres_exporter-0.9.0.linux-amd64.tar.gz -n machina-pg
-ls
-mkdir gitsby
-cd .\gitsby\
-git clone https://github.com/MacnaMuniz/mslearn-dp100.git
-cp ..\mslearn-dp100\ .
-cp ..\mslearn-dp100\ 
-cp ..\mslearn-dp100\ .\
-cp -pR ..\mslearn-dp100 .
-cp -pR ..\mslearn-dp100
-cp ..\mslearn-dp100 .\mslearn-dp100\
-ls
-cd .\mslearn-dp100\
-ls
-  
-git commit -m init
-git push
-  git commit -m init
-cd .\mslearn-dp100\
-git init
-  
-git commit -m init
-git push
- 
 
 
  
@@ -648,23 +540,15 @@ setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=
 aws eks list-clusters --profile profile-production
 aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks
 aws configure
-
- 
+aws eks --region us-east-1 update-kubeconfig --name prod-machina-lite-cluster-eks --profile .\profile-production
+aws eks --region us-east-1 update-kubeconfig --name prod-machina-lite-cluster-eks --profile profile-production
 aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile .\profile-quality
-cod .
-code .
+
+  
 aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks --profile profile-production
- 
- cat .\profile-production
- -production
- -quality
- 
- -quality
 vim ~/.aws/config
-npm install vim
 code ~/.aws/config
- -quality
-181unset AWS_DEFAULT_PROFILE
+unset AWS_DEFAULT_PROFILE
 aws configure
  -quality
 aws eks --region us-east-1 update-kubeconfig --name qa-machina-cluster-eks
@@ -724,4 +608,4 @@ PS C:\Users\machi_f026bvn\Downloads> java -jar .\rundeck-4.6.1-20220914.war
 
 xclip -v >> install-kubectl.ps1 
 start-process powershell –verb runAs
-choco install rundeck azureml-sdk kubernetes-cli minikube python python3 git mingw terraform docker-desktop python39 gitlabber github-desktop kubernetes-helm fluent-terminal -y
+choco install rundeck azureml-sdk kubernetes-cli minikube python python3 git mingw terraform docker-desktop python39   
