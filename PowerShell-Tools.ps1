@@ -21,10 +21,7 @@ Reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lfsvc" /v Start /t
 
 jenkins
 curl --user username:password -X POST -F "jenkinsfile=<Jenkinsfile" https://jenkins-cicd-tools.cpdh.machina.local/view/PBM/job/Jenkinsfile/
-C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\secrets\
 initialAdminPassword | clip
-cd 'C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\secrets\initialAdminPassword' 
-C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\secrets\initialAdminPassword | clip
 C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\secrets\initialAdminPassword | clip
 
 function GoAdmin { Start-Process pwsh –Verb RunAs }
