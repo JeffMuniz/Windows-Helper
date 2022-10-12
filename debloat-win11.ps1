@@ -183,3 +183,11 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.SkypeApp_15.8
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneMusic_2019.22031.10091.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:RealtekSemiconductorCorp.RealtekAudioControl_1.14.221.0_neutral_~_dt26b99r8h8gj
 
+
+Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml”}
+Reg Delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /f
+Reg Delete "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /f
+Use the Get-AppXPackage | Foreach command to add a new AppX package and disable development mode before registering the “$($_.InstallLocation)AppXManifest.xml” in each of the AppX packages.
+It will take time to complete step three. The corrupt file will be replaced in the system as a result.
+Step 3: Restart your computer after following these instructions. This solution can quickly fix the unexpected store exception error if any of your system files are corrupt.
+
