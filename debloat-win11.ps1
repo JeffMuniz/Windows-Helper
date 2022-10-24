@@ -13,7 +13,35 @@ $cmdOutput = DISM /Online /Get-ProvisionedAppxPackages | select-string Packagena
 #DISM /Online /Remove-ProvisionedAppxPackage /PackageName:$cmdOutput
 DISM /Online /Get-ProvisionedAppxPackages | select-string "Packagename"
 
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.549981C3F5F10_4.2204.13303.0_neutral_~_8wekyb3d8bbwe
+
+
+
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftOfficeHub_18.2209.1071.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftSolitaireCollection_4.14.9130.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftStickyNotes_4.5.7.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.81.52842.0_neutral_~_8wekyb3d8bbwe
+
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.DesktopAppInstaller_2022.927.3.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GamingApp_2021.427.138.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.2206.2011.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_2021.2207.2.0_neutral_~_8wekyb3d8bbwe
+
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2021.2105.4.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.PowerAutomateDesktop_10.0.4761.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:microsoft.windowscommunicationsapps_16005.14326.20970.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsFeedbackHub_2022.317.2207.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsMaps_2022.2208.6.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsNotepad_11.2208.25.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsSoundRecorder_2021.2208.27.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Xbox.TCUI_1.24.10001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGameOverlay_1.54.4001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGamingOverlay_5.822.9161.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxIdentityProvider_12.93.6001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxSpeechToTextOverlay_1.21.13002.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_1.22082.117.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneMusic_11.2208.25.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneVideo_2019.22041.10091.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftTeams_22260.203.1605.4995_x64__8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.DesktopAppInstaller_2022.728.1939.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GamingApp_2021.427.138.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.2204.1222.0_neutral_~_8wekyb3d8bbwe
@@ -21,7 +49,6 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_20
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftOfficeHub_18.2205.1091.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftSolitaireCollection_4.13.7180.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftStickyNotes_4.5.5.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Paint_11.2206.6.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2021.2105.4.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.PowerAutomateDesktop_10.0.4266.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.75.52061.0_neutral_~_8wekyb3d8bbwe
@@ -190,4 +217,18 @@ Reg Delete "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate"
 Use the Get-AppXPackage | Foreach command to add a new AppX package and disable development mode before registering the “$($_.InstallLocation)AppXManifest.xml” in each of the AppX packages.
 It will take time to complete step three. The corrupt file will be replaced in the system as a result.
 Step 3: Restart your computer after following these instructions. This solution can quickly fix the unexpected store exception error if any of your system files are corrupt.
+
+
+
+
+
+
+
+
+
+
+
+(11)98884xxx6080
+
+
 
