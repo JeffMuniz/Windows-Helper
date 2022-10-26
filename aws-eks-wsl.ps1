@@ -189,3 +189,37 @@ aws eks --region us-east-1 update-kubeconfig --name cluster-eks-$(ENV)
 aws get-session-token
 aws eks --region us-east-1 update-kubeconfig --name cluster-eks-$(ENV) 
 
+
+#aws
+setx AWS_ACCESS_KEY_ID aws_access_key_id=SOME-KEY-ID
+setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
+aws login
+aws eks --region us-east-1 update-kubeconfig --name cluster-eks-$(ENV)
+ curl http://169.254.169.254/latest/meta-data/iam/security-credentials
+aws iam list-users
+aws eks --region us-east-1 update-kubeconfig --name cluster-eks-$(ENV) 
+aws eks --region us-east-1 update-kubeconfig --name cluster-eks-$(ENV) 
+aws iam list-users --profile profile-quality
+aws configure
+aws configure --profile profile-production
+aws ec2-instance-connect send-ssh-public-key --ssh-public-key profile-production --instance-id  SOME-TOKEN
+aws ec2-instance-connect send-ssh-public-key  --instance-id  SOME-TOKEN
+aws ec2-instance-connect --instance-id cluster-eks-$(ENV) --instance-id cluster-eks-$(ENV)
+aws eks list-clusters --profile profile-production
+aws eks --region us-east-1 update-kubeconfig --name cluster-eks-$(ENV) --profile .\profile-production
+aws eks --region us-east-1 update-kubeconfig --name cluster-eks-$(ENV) --profile .\profile-quality
+ping  10.133.37.85
+telnet 10.133.37.85:9092
+telnet 10.133.37.85 9092
+telnet 10.133.37.85 9093
+telnet machina-kafka 9093
+telnet machina-kafka 443
+
+unset AWS_DEFAULT_PROFILE
+unset AWS_SESSION_TOKEN
+setx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
+unsetx AWS_SECRET_ACCESS_KEY aws_secret_access_key=SOME-TOKEN
+REG delete HKCU\Environment /F /V FOOBAR
+REG delete HKCU\Environment /F /V AWS_SECRET_ACCESS_KEY 
+REG delete HKCU\Environment /F /V AWS_ACCESS_KEY_ID 
+
