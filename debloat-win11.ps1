@@ -117,86 +117,6 @@ Get-AppxPackage *XboxApp* | Remove-AppxPackage-AppxPackage ** | Remove-AppxPacka
 
 
 
-#AGRESSIVOGet-AppxPackage -AllUsers | Remove-AppxPackage
-#AGRESSIVO Get-AppxPackage -AllUsers | where-object {$_.name –notlike "*store*"} | Select-String "Microsoft." | Remove-AppxPackage
-
-
-
-
-
-
-
-
-
-
-Não permitido
-Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost* | Remove-AppxPackage
-Get-AppxPackage *MicrosoftEdgeDevToolsClient* | Remove-AppxPackage
-Get-AppxPackage *xbox* | Remove-AppxPackage
-Get-AppxPackage -name “Microsoft.BioEnrollment” | Remove-AppxPackage
-Remove-AppxPackage Microsoft.BioEnrollment 
-Get-AppxPackage -name “Microsoft.AAD.BrokerPlugin” | Remove-AppxPackage
-
-Não permitido LOG
-
-Get-AppxPackage *XboxGame* | Remove-AppxPackage
-Remove-AppxPackage : Falha na implantação com HRESULT: 0x80073CFA, Falha na remoção.
- Entre em contato com o fornecedor de software.
-(Exceção de HRESULT: 0x80073CFA)
-erro 0x80070032: Operação de implantação de AppX Remove no pacote
-Microsoft.XboxGameCallableUI_1000.22000.1.0_neutral_neutral_cw5n1h2txyewy de:
-C:\Windows\SystemApps\Microsoft.XboxGameCallableUI_cw5n1h2txyewy falhou.
- Este aplicativo faz parte do Windows e não pode ser
-desinstalado no nível do usuário. Um administrador pode tentar remover o 
-aplicativo do computador usando a opção "Ativar e desativar
-recursos do Windows". 
-No entanto, talvez não seja possível desinstalar o aplicativo.
-OBSERVAÇÃO: para obter informações adicionais, procure [ActivityId] 
-a747a2c4-bb1a-0002-5281-48a71abbd801 no Log de Eventos ou use a
-linha de comando Get-AppPackageLog -ActivityID a747a2c4-bb1a-0002-5281-48a71abbd801
-No linha:1 caractere:54
-+ ... t-AppxPackage -name Microsoft.XboxGameCallableUI | Remove-AppxPackage
-+                                                        ~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : WriteError: (Microsoft.XboxG...l_cw5n1h2txyewy:String) 
-    [Remove-AppxPackage], IOException
-    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands
-    .RemoveAppxPackageCommand
-
-
-
-
-
-revisar
-Get-AppxPackage *Microsoft.e*
-
-
-Name              : Microsoft.ECApp
-Publisher         : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
-Architecture      : Neutral
-ResourceId        :
-Version           : 10.0.22000.1
-PackageFullName   : Microsoft.ECApp_10.0.22000.1_neutral__8wekyb3d8bbwe
-
-
-Name              : Microsoft.LockApp
-Publisher         : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
-Architecture      : Neutral
-ResourceId        :
-Version           : 10.0.22000.1
-PackageFullName   : Microsoft.LockApp_10.0.22000.1_neutral__cw5n1h2txyewy
-InstallLocation   : C:\Windows\SystemApps\Microsoft.LockApp_cw5n1h2txyewy
-
-
-
-#Very brute
-#Get-AppxPackage ** | Remove-AppxPackage
-
-Get-AppxPackage *Microsoft.Windows.PeopleExperienceHost* | Remove-AppxPackage
-Get-AppxPackage *Windows.PrintDialog* | Remove-AppxPackage
-Get-AppxPackage -PackageTypeFilter Bundle
-Get-AppxPackage -PackageTypeFilter Framework
-
-
 Remove Windows 10 apps
 Get-AppxPackage -AllUsers | where-object {$_.name -notlike "*store*"} | Remove-AppxPackage
 
@@ -222,13 +142,9 @@ Step 3: Restart your computer after following these instructions. This solution 
 
 
 
-
-
-
-
-
-
 (11)98884xxx6080
 
-
-
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms_2022.2209.11.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftCorporationII.QuickAssist_2022.825.2016.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftTeams_22287.702.1670.9453_x64__8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Clipchamp.Clipchamp_2.5.5.0_neutral_~_yxz26nhyzhsrt
