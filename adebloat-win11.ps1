@@ -45,6 +45,30 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.86.53
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftCorporationII.QuickAssist_2022.825.2016.0_neutral_~_8wekyb3d8bbwe
 
 
+PackageName : AppUp.IntelGraphicsExperience_1.100.4979.0_neutral_~_8j3eq9eme6ctt
+PackageName : AppUp.ThunderboltControlCenter_1.0.36.0_x64__8j3eq9eme6ctt
+PackageName : DellInc.DellSupportAssistforPCs_3.14.4.0_x64__htrsf667h5kn2
+PackageName : Microsoft.549981C3F5F10_4.2204.13303.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.BingNews_4.6.29001.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.BingWeather_4.53.51775.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.DesktopAppInstaller_2023.606.2047.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.HEIFImageExtension_1.0.61171.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.HEVCVideoExtension_2.0.61591.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.MicrosoftEdge.Stable_114.0.1823.67_neutral__8wekyb3d8bbwe
+PackageName : Microsoft.RawImageExtension_2.1.61661.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.ScreenSketch_2022.2303.17.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.SecHealthUI_1000.25873.9001.0_x64__8wekyb3d8bbwe
+PackageName : Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe
+PackageName : Microsoft.VP9VideoExtensions_1.0.61591.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.WebMediaExtensions_1.0.61591.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.WebpImageExtension_1.0.52351.0_x64__8wekyb3d8bbwe
+PackageName : Microsoft.WindowsStore_22305.1401.1.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.WindowsTerminal_3001.17.11461.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.ZuneMusic_11.2304.2.0_neutral_~_8wekyb3d8bbwe
+PackageName : Microsoft.ZuneVideo_2019.22091.10041.0_neutral_~_8wekyb3d8bbwe
+PackageName : MicrosoftWindows.Client.WebExperience_423.13900.0.0_neutral_~_cw5n1h2txyewy
+PackageName : NVIDIACorp.NVIDIAControlPanel_8.1.964.0_x64__56jybvy8sckqj
+PackageName : WavesAudio.MaxxAudioProforDell2021_4.0.53.0_neutral_~_fh4rh281wavaa
 
 
 
