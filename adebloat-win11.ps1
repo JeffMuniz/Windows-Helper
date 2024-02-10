@@ -5,6 +5,19 @@ DISM.exe /Online /Cleanup-image /Restorehealth
 DISM /Online /Get-ProvisionedAppxPackages | select-string "Packagename"
 
 
+
+
+
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingNews_4.8.11001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.53.52331.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.OutlookForWindows_1.2023.1011.100_x64__8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Windows.DevHome_0.1001.390.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneMusic_11.2312.7.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneVideo_2019.22091.10061.0_neutral_~_8wekyb3d8bbwe
+
+
+
+
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingNews_4.8.11001.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.53.52331.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.OutlookForWindows_1.2023.1011.100_x64__8wekyb3d8bbwe
