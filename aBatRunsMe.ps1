@@ -9,11 +9,11 @@ $ie.Navigate("https://aplic.inmetrics.com.br/pontoeletronico/")
 while ($ie.Busy -eq $true){Start-Sleep -seconds 15;}
 
 $usernamefield = $ie.Document.getElementByID('edMatricula')
-$usernamefield.value = '32796839800'
+$usernamefield.value = ''
 #$usernamefield.value = 'cpf'
 
 $passwordfield = $ie.Document.getElementByID('edSenha')
-$passwordfield.value = 'Pistols@01'
+$passwordfield.value = ''
 #$passwordfield.value = 'senha'
 
 $Link=$ie.Document.getElementByID('enviar')

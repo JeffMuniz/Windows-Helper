@@ -13,7 +13,9 @@ after download install java and run terminal as admin:
 start-process powershell –verb runAs
 PS C:\Users\machi_f026bvn\Downloads> java -jar .\rundeck-4.6.1-20220914.war
 
-
+https://hub.docker.com/r/rundeck/rundeck/
+https://docs.rundeck.com/docs/administration/install/docker.html#process-automation-formerly-rundeck-enterprise
+docker run --name some-rundeck -p 4440:4440 -v data:/home/rundeck/server/data rundeck/rundeck:5.1.1
 
 
 
