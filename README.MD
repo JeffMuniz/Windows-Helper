@@ -1,34 +1,45 @@
 This repo aims to provide tools for automating things on Windows Platforms
-
+7 Itens in total
+1-choco 2-Rundeck 3-debloat 4-NTP 5-Robo 6-CRLF
 
 **start Admin terminal { start-process powershell –verb runAs }
 1 - choco install docker-desktop -y #terraform minikube gcloudsdk 
-
-2 - install choco
+install choco
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-3 - Rundeck Community supports runbook automation for small teams. Register to download free of charge and keep in touch with the latest Community updates. Sign up to get started in minutes.
-
+2 - Rundeck Community supports runbook automation for small teams. Register to download free of charge and keep in touch with the latest Community updates. Sign up to get started in minutes.
 after download install java and run terminal as admin:
 start-process powershell –verb runAs
 PS C:\Users\machi_f026bvn\Downloads> java -jar .\rundeck-4.6.1-20220914.war
-
 https://hub.docker.com/r/rundeck/rundeck/
 https://docs.rundeck.com/docs/administration/install/docker.html#process-automation-formerly-rundeck-enterprise
 docker run --name some-rundeck -p 4440:4440 -v data:/home/rundeck/server/data rundeck/rundeck:5.1.1
 
+3 - adebloat-win11.ps1
+install DISM and debloat
+DISM /Online /Get-ProvisionedAppxPackages | select-string "Packagename"
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName: Microsoft.549981C3F5F10_4.2204.13303.0_neutral_~_8wekyb3d8bbwe
+
+4 - TimeSync.bat - Add and configure more NTP servers to Windows
+REM @ECHO OFF
+ECHO PARANDO SERVICO
+net stop w32time 
+TIMEOUT 3
+ECHO INICIANDO SERVICO
+net start w32time
+TIMEOUT 3
+ECHO SINCRONIZANDO A HORA
+w32tm /config /update /manualpeerlist:"pool.ntp.org time.windows.com time.apple.com time.google.com"
+w32tm /resync
+w32tm /query /peers
+ECHO  !!!!!!HORA SINCRONIZADA!!!!!!!!
+TIMEOUT 15
+EXIT
 
 
+5 - Robots bat and ps1 are the most raw windows automation for reference 
 
-
-
-
-
-
-
-
-
-VSCode and LineEndings this helps to deal crlf and lf-This is a Windows Repo
+6 - VSCode and LineEndings this helps to deal crlf and lf-This is a Windows Repo
 
 More specifically, the text=auto option tells Git to only normalize line endings to LF for text files while leaving binary files (images, fonts, etc.) untouched. This distinction is important—we don’t want to corrupt binary files by modifying their line endings.
 

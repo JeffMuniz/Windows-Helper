@@ -1,5 +1,5 @@
 REM @ECHO OFF
-PowerShell.exe -Command "& 'C:\Users\Jefferson Moura\OneDrive - Inmetrics\scriptsLocal\ponto\ponto.ps1'"
+PowerShell.exe -Command "& 'C:\robo.ps1'"
 setlocal
 TIMEOUT 6
 Taskkill /im iexplorer.exe
