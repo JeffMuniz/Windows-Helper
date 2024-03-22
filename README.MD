@@ -1,20 +1,36 @@
-Analyze conversations using Contact Lens for Amazon Connect
+This repo aims to provide tools for automating things on Windows Platforms
 
 
-Contact Lens for Amazon Connect enables you to analyze conversations between customer and agents, by using speech transcription, natural language processing, and intelligent search capabilities. It performs sentiment analysis, detects issues, and enables you to automatically categorize contacts.
-https://docs.aws.amazon.com/connect/latest/adminguide/connect-ag.pdf#analyze-conversations/
+**start Admin terminal { start-process powershell –verb runAs }
+1 - choco install docker-desktop -y #terraform minikube gcloudsdk 
+
+2 - install choco
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+3 - Rundeck Community supports runbook automation for small teams. Register to download free of charge and keep in touch with the latest Community updates. Sign up to get started in minutes.
+
+after download install java and run terminal as admin:
+start-process powershell –verb runAs
+PS C:\Users\machi_f026bvn\Downloads> java -jar .\rundeck-4.6.1-20220914.war
 
 
 
-# LineEndings
-help deal crlf and lf-This is a Windows Repo
 
+
+
+
+
+
+
+
+
+
+
+VSCode and LineEndings this helps to deal crlf and lf-This is a Windows Repo
 
 More specifically, the text=auto option tells Git to only normalize line endings to LF for text files while leaving binary files (images, fonts, etc.) untouched. This distinction is important—we don’t want to corrupt binary files by modifying their line endings.
 
 One final note: In the recommended .gitattributes file, we used * text=auto to mark all text files for end-of-line normalization to LF once they’re staged in Git’s index. We could’ve also done * text=auto eol=lf, although these two are not identical. Like I mentioned before, if you only use * text=auto, you may still see some CRLF line endings locally in your working tree; this is okay and is working as expected. If you don’t want this, you can enforce * text=auto eol=lf instead. However, this is usually not necessary because the main concern is about what line endings make it into the index and your repo.
-
-
 
 Summary: Git Config vs. .gitattributes
 There are some similarities between Git’s local settings and the Git attributes we looked at. The table below lists each Git setting, its corresponding .gitattributes rule, and the line endings for text files in the index and working tree:
