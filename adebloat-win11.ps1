@@ -5,6 +5,16 @@ DISM /Online /Get-ProvisionedAppxPackages | select-string "Packagename"
 
 
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.53.33420.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingNews_4.8.11001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.OutlookForWindows_1.2024.424.300_x64__8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.PowerAutomateDesktop_11.2404.195.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Windows.DevHome_0.1301.477.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms_2022.2202.24.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsMaps_2022.2403.4.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsSoundRecorder_2021.2403.3.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneMusic_11.2403.5.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneVideo_2019.22091.10061.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.53.33420.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.54.42772.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GamingApp_2021.427.138.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.2201.421.0_neutral_~_8wekyb3d8bbwe
@@ -57,53 +67,6 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxIdentityP
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxSpeechToTextOverlay_1.21.13002.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_1.22052.554.0_neutral_~_8wekyb3d8bbwe
 
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftTeams_22183.300.1431.9295_x64__8wekyb3d8bbwe
-
-
-
-
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingNews_4.7.28001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.53.41681.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GamingApp_2021.427.138.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.2204.1222.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_2021.2206.2.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftOfficeHub_18.2205.1091.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftSolitaireCollection_4.13.7180.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftStickyNotes_4.5.5.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Paint_11.2206.6.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2021.2105.4.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.PowerAutomateDesktop_10.0.4266.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ScreenSketch_2022.2206.13.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.SecHealthUI_1000.22000.1.0_neutral__8wekyb3d8bbwe
-
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Windows.Photos_2022.31060.30005.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms_2022.2206.27.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsCalculator_2021.2206.0.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsCamera_2022.2206.2.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.windowscommunicationsapps_16005.14326.20970.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsFeedbackHub_2022.317.2207.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsMaps_2022.2205.9.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsNotepad_11.2206.17.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsSoundRecorder_2021.2205.15.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.75.52061.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Xbox.TCUI_1.24.10001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGameOverlay_1.54.4001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGamingOverlay_5.822.6271.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxIdentityProvider_12.90.14001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxSpeechToTextOverlay_1.21.13002.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_1.22052.554.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneMusic_11.2206.30.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneVideo_2019.22041.10091.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftTeams_22183.300.1431.9295_x64__8wekyb3d8bbwe
-
-
-
-
-
-
-
-
-
 
 
 
@@ -139,7 +102,6 @@ Get-AppxPackage -name “Microsoft.WindowsPhone” | Remove-AppxPackage
 
 
 DISM /Online /Get-ProvisionedAppxPackages | select-string "Packagename"
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsNotepad_11.2112.32.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Xbox.TCUI_1.23.28004.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_1.23032.186.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftTeams_23091.406.2009.3890_x64__8wekyb3d8bbwe
@@ -244,96 +206,6 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:microsoft.windowscommunicationsapps_16005.14326.20970.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsFeedbackHub_2022.317.2207.0_neutral_~_8wekyb3d8bbwe
 
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingNews_4.8.11001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.53.52331.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.OutlookForWindows_1.2023.1011.100_x64__8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Windows.DevHome_0.1001.390.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneMusic_11.2312.7.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneVideo_2019.22091.10061.0_neutral_~_8wekyb3d8bbwe
-
-
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingNews_4.8.11001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.53.52331.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.OutlookForWindows_1.2023.1011.100_x64__8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Windows.DevHome_0.1001.390.0_neutral_~_8wekyb3d8bbwe
-
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.2303.10961.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_2021.2204.1.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftOfficeHub_18.2204.1141.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftSolitaireCollection_4.12.3171.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftStickyNotes_4.6.0.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Paint_11.2302.18.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2021.2202.30.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.PowerAutomateDesktop_10.0.6613.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms_2022.2302.5.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsCalculator_2021.2210.0.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsCamera_2022.2302.14.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:microsoft.windowscommunicationsapps_16005.14326.20544.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsFeedbackHub_2023.504.1552.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsNotepad_11.2303.40.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsSoundRecorder_2021.2302.26.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Xbox.TCUI_1.24.10001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGameOverlay_1.54.4001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGamingOverlay_5.823.3261.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxIdentityProvider_12.95.3001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxSpeechToTextOverlay_1.21.13002.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_1.23032.196.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftCorporationII.QuickAssist_2023.214.104.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftTeams_23091.406.2009.3890_x64__8wekyb3d8bbwe
-
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Clipchamp.Clipchamp_2.2.8.0_neutral_~_yxz26nhyzhsrt
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Clipchamp.Clipchamp_2.5.13.0_neutral_~_yxz26nhyzhsrt
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Clipchamp.Clipchamp_2.5.15.0_neutral_~_yxz26nhyzhsrt
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsFeedbackHub_2022.1216.1915.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsNotepad_11.2302.16.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_1.23022.139.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_1.22102.229.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftCorporationII.MicrosoftFamily_0.2.39.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftCorporationII.QuickAssist_2023.214.104.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.86.53503.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftCorporationII.QuickAssist_2022.825.2016.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.2208.2551.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_2021.2210.3.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftOfficeHub_18.2210.1203.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftSolitaireCollection_4.15.12020.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftStickyNotes_4.5.7.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Paint_11.2208.6.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2021.2105.4.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms_2022.2210.7.~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.2303.10961.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_2021.2204.1.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftOfficeHub_18.2204.1141.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftSolitaireCollection_4.12.3171.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftStickyNotes_4.6.0.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Paint_11.2302.18.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2021.2202.30.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.54.42772.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms_2022.2302.5.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsCalculator_2021.2210.0.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsCamera_2022.2302.14.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:microsoft.windowscommunicationsapps_16005.14326.20544.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsFeedbackHub_2023.504.1552.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsNotepad_11.2303.40.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Xbox.TCUI_1.24.10001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGameOverlay_1.54.4001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGamingOverlay_5.823.3261.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxIdentityProvider_12.95.3001.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxSpeechToTextOverlay_1.21.13002.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftCorporationII.QuickAssist_2023.214.104.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftTeams_23091.406.2009.3890_x64__8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.2201.421.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_2021.2303.3.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftStickyNotes_4.2.2.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2020.901.1724.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.PowerAutomateDesktop_10.0.6604.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.PowerAutomateDesktop_10.0.4266.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.94.6962.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsCamera_2022.2302.14.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsFeedbackHub_2023.504.1552.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGameOverlay_1.47.2385.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGamingOverlay_2.622.3232.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftCorporationII.QuickAssist_2022.414.1758.0_neutral_~_8wekyb3d8bbwe
-******
 
 
 Remove Windows 10 apps
@@ -360,11 +232,6 @@ $cmdOutput = DISM /Online /Get-ProvisionedAppxPackages | select-string Packagena
 
 Reg Delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /f
 Reg Delete "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /f
-
-
-
-
-
 
 
 Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml”}
