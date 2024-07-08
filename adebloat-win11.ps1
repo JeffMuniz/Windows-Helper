@@ -1,14 +1,27 @@
 # Install DISM
 
 DISM.exe /Online /Cleanup-image /Restorehealth
+
 DISM /Online /Get-ProvisionedAppxPackages | select-string "Packagename"
+
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:PACKAGENAME
 
+# Remove all bloatware
 
-
-
-
-
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.MicrosoftOfficeHub_18.2405.1221.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.OutlookForWindows_1.2024.625.600_x64__8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Paint_11.2404.1020.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2021.2202.100.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.114.7122.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Xbox.TCUI_1.24.10001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGameOverlay_1.54.4001.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxGamingOverlay_7.124.5142.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.XboxSpeechToTextOverlay_1.21.13002.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_1.24061.93.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.ZuneMusic_11.2405.8.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftCorporationII.QuickAssist_2024.326.133.0_neutral_~_8wekyb3d8bbwe
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftWindows.CrossDevice_1.24061.40.0_neutral_~_cw5n1h2txyewy
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingNews_4.8.11001.0_neutral_~_8wekyb3d8bbwe 
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.53.33420.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Clipchamp.Clipchamp_2.2.8.0_neutral_~_yxz26nhyzhsrt
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingNews_4.2.27001.0_neutral_~_8wekyb3d8bbwe
@@ -24,7 +37,8 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Paint_11.2403
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.People_2020.901.1724.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.PowerAutomateDesktop_10.0.3735.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Todos_2.54.42772.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Windows.DevHome_0.1301.477.0_neutral_~_8wekyb3d8bbwe
+
+
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms_2022.2202.24.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsCamera_2022.2201.4.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:microsoft.windowscommunicationsapps_16005.14326.20544.0_neutral_~_8wekyb3d8bbwe
@@ -49,7 +63,7 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingNews_4.8.11001.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.OutlookForWindows_1.2024.424.300_x64__8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.PowerAutomateDesktop_11.2404.195.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Windows.DevHome_0.1301.477.0_neutral_~_8wekyb3d8bbwe
+
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsAlarms_2022.2202.24.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsMaps_2022.2403.4.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.WindowsSoundRecorder_2021.2403.3.0_neutral_~_8wekyb3d8bbwe
