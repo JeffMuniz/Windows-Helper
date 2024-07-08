@@ -1,4 +1,7 @@
 
+
+DISM /Online /Remove-ProvisionedAppxPackage /PackageName:PACKAGENAME
+https://www.systweak.com/blogs/how-to-remove-bloatware-from-windows-11/
 Install DISM
 DISM.exe /Online /Cleanup-image /Restorehealth
 DISM /Online /Get-ProvisionedAppxPackages | select-string "Packagename"
@@ -76,7 +79,7 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftTeams_24102.23
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:MicrosoftWindows.CrossDevice_1.24042.39.0_neutral_~_cw5n1h2txyewy
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingNews_4.7.28001.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.BingWeather_4.53.41681.0_neutral_~_8wekyb3d8bbwe
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.DesktopAppInstaller_2022.728.1939.0_neutral_~_8wekyb3d8bbwe
+
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GamingApp_2021.427.138.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.GetHelp_10.2204.1222.0_neutral_~_8wekyb3d8bbwe
 DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.Getstarted_2021.2206.2.0_neutral_~_8wekyb3d8bbwe
@@ -107,9 +110,6 @@ DISM /Online /Remove-ProvisionedAppxPackage /PackageName:Microsoft.YourPhone_1.2
 
 
 
-
-DISM /Online /Remove-ProvisionedAppxPackage /PackageName:PACKAGENAME
-https://www.systweak.com/blogs/how-to-remove-bloatware-from-windows-11/
 Get-AppxPackage -name “Microsoft.ZuneMusic” | Remove-AppxPackage
 Get-AppxPackage -name “Microsoft.Music.Preview” | Remove-AppxPackage
 Get-AppxPackage -name “Microsoft.XboxGameCallableUI” | Remove-AppxPackage
@@ -437,7 +437,6 @@ Microsoft.WebMediaExtensions_1.1.663.0_x64__8wekyb3d8bbwe
 Microsoft.GetHelp_10.2403.20861.0_x64__8wekyb3d8bbwe
 Microsoft.WindowsAppRuntime.1.4_4000.1227.1637.0_x86__8wekyb3d8bbwe
 Microsoft.WindowsAppRuntime.1.4_4000.1227.1637.0_x64__8wekyb3d8bbwe
-Microsoft.DesktopAppInstaller_1.22.11261.0_x64__8wekyb3d8bbwe
 Microsoft.RawImageExtension_2.3.1221.0_x64__8wekyb3d8bbwe
 Microsoft.WebpImageExtension_1.1.1221.0_x64__8wekyb3d8bbwe
 Microsoft.OneDriveSync_24081.421.3.0_neutral__8wekyb3d8bbwe
